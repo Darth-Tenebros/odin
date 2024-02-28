@@ -1,0 +1,22 @@
+* {
+    outline: 2px solid red;
+}
+
+body{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.rps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 300px;
+}
+
+.choice{
+    height: 100px;
+    width: 100px;
+}
