@@ -1,0 +1,23 @@
+*{
+    outline: 2px solid red;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#container{ 
+    margin: 15px;
+    display: grid;
+    width: 900px;
+    height: 900px;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.pixels{
+    background-color: azure;
+}
