@@ -50,15 +50,17 @@
     gap: 5px;
 }
 
+/* TODO: TAKE SVG FROM YT PAGE AND REPLACE */
 #logo img{
     width: 30px;
     height: 20px;
 }
 
 #logo span{
+    transform: scaleY(1.7);
     font-weight: bolder;
     font-family: 'YouTube Sans', sans-serif;
-    font-size: 22px;
+    font-size: 15px;
     display: flex;
     align-items: center;
 }
@@ -114,6 +116,14 @@
 }
 
 #nav-right div{
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#nav-right div:nth-child(3){
+    width: 32px;
+    height: 32px;
+    background-color:black;
+    border-radius: 50%;
 }
