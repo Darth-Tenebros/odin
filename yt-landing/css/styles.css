@@ -4,7 +4,7 @@
 } */
 
 
-/* NAVIGATION BAR STYLING */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!NAVIGATION BAR STYLING START!!!!!!!!!!!!!!!*/
 
 #nav-bar{
     width: 100%;
@@ -126,4 +126,29 @@
     height: 32px;
     background-color:black;
     border-radius: 50%;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!NAVIGATION BAR STYLING END!!!!!!!!!!!!!!!!!*/
+
+/* !!!!!!!!!!!!!MAIN STYLING START!!!!!!!!!!!!!!!!*/
+
+#main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+#main #aside{
+    background-color: aqua;
+    width: 13%;
+    height: 100%;
+}
+
+#main #main-content{
+    background-color: darkblue;
+    width: 87%;
+    height: 100%;
 }
