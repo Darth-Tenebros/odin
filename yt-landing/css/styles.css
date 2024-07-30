@@ -1,0 +1,119 @@
+/* *{
+    outline: 2px solid red;
+    padding: 3px;
+} */
+
+
+/* NAVIGATION BAR STYLING */
+
+#nav-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* nav far left */
+#nav-left{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+}
+
+#hamburger  {
+    width: 20px;
+    height: 30px;
+    margin: 11px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin: 2px;
+}
+
+#logo{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#logo img{
+    width: 30px;
+    height: 20px;
+}
+
+#logo span{
+    font-weight: bolder;
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+/* nav middle (search) */
+#nav-middle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 70%;
+}
+#nav-middle form{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#nav-middle form input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+#nav-middle form input::placeholder{
+    margin-left: 10px;
+}
+
+#nav-middle form button{
+    width: 10%;
+    height: 100%;
+    
+}
+
+#magni-icon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* nav right */
+
+#nav-right{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#nav-right div{
+    width: 20px;
+    height: 20px;
+}
