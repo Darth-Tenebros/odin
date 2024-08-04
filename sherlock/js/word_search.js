@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    // get the currently selected letter (that make up a word)
+    // get the currently selected letters (that make up a word)
     const current = document.getElementById("current-word");
 
     for (let row = 0; row < gridSize; row++) {
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function(){
             gameGrid.appendChild(cell);
         }
     }
-    
+
     // handle submit button click
     const submit = document.querySelector('.sub')
     submit.addEventListener('click', function(event){
