@@ -136,16 +136,47 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
+    // get the currently selected letter (that make up a word)
+    const current = document.getElementById("current-word");
+
     for (let row = 0; row < gridSize; row++) {
         for (let col = 0; col < gridSize; col++) {
+            
             const cell = document.createElement('div');
             cell.classList.add('game-cell');
+            
+            if (!cell.classList.contains('disabled')){
+                cell.classList.add('disabled');
+            }
+
             cell.textContent = grid[row][col];
-            cell.addEventListener('click', function(){
+            cell.addEventListener('click', function handleClick(event){
+
                 cell.style.color = 'red';
+                
+                let currentText = current.textContent;
+                current.textContent = currentText + event.target.innerText;
+
+                cell.removeEventListener('click', handleClick);
             });
+            
             gameGrid.appendChild(cell);
         }
     }
+    
+    // handle submit button click
+    const submit = document.querySelector('.sub')
+    submit.addEventListener('click', function(event){
+        let word = current.textContent;
+        current.textContent = '';
+
+        if(words.includes(word)){
+            for (const child of wordList.children) {
+                if(child.textContent === word){
+                    child.style.textDecoration = 'line-through';
+                }
+            }
+        }
+    });
 });
 
