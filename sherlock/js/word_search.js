@@ -107,8 +107,21 @@ function placeWord(word){
 }
 
 
-document.addEventListener('DOMContentLoaded', function(event){
-    const words = ['turing', 'programming', 'javascript', 'golang', 'boolean', 'function', 'ayoba', 'shaper'];
+document.addEventListener('DOMContentLoaded', function(){
+    const words = [
+        'REPOSITORY', 'DATABASE', 'TURING', 'UCTGSB', 'VERSION', 'FUNCTION', 'DEBUGGING', 
+        'SHAPER', 'SOFTWARE', 'ALGORITHM', 'BACKEND', 'DEPLOYMENT', 'API', 'FRONTEND', 
+        'TURING', 'PROGRAMMING', 'SYNTAX', 'GOLANG', 'JAVASCRIPT', 
+        'AYOBA', 'FRAMEWORK'
+    ];
+
+    const wordList = document.getElementById('word-list');
+    for(let i = 0; i < words.length; i++){
+        const item = document.createElement('p');
+        item.textContent = words[i];
+        wordList.appendChild(item);
+    }
+
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
     for(let i = 0; i < words.length; i++){
@@ -128,6 +141,9 @@ document.addEventListener('DOMContentLoaded', function(event){
             const cell = document.createElement('div');
             cell.classList.add('game-cell');
             cell.textContent = grid[row][col];
+            cell.addEventListener('click', function(){
+                cell.style.color = 'red';
+            });
             gameGrid.appendChild(cell);
         }
     }
